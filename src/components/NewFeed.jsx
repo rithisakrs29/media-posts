@@ -30,7 +30,7 @@ function NewFeed() {
           <div className="flex justify-between items-center">
             <div className="flex items-center">
               <img
-                src={"http://localhost:8080/learn_php/block_post_php"+item.profile_image}
+                src={item.profile_image}
                 className="h-10 w-10 object-cover rounded-full"
                 alt=""
               />
@@ -45,9 +45,9 @@ function NewFeed() {
           <b className="mt-2 dark:text-purple-500 text-blue-600">
             {item.title}
           </b>
-          <p className="mt-2 dark:text-white text-black">{item.content}</p>
+          <p className="mt-2 dark:text-white text-black">{item.contents}</p>
           <img
-            src={"http://localhost:8080/learn_php/block_post_php/users/"+item.postImage}
+            src={item.postImage}
             className="mt-2 rounded-lg h-full w-full object-cover"
             alt=""
           />
